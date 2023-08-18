@@ -4,8 +4,8 @@ let count = 0;
 
 app.get("/",(req,res)=>{
     console.log(`request on home page ${count} time`);
-    count++;
     res.send(`this is home page ${count}`)
+    count++;
 })
 
 app.listen(3200,()=>{
